@@ -1,5 +1,5 @@
 @import "config";
-
+@import "menu";
 body {
   background: $primary-color;
   color: #fff;
@@ -24,7 +24,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: lighten ($primary-color, 2);
+    background: lighten($primary-color, 5);
   }
 }
 
@@ -36,6 +36,7 @@ a {
 header {
   position: fixed;
   z-index: 2;
+  width: 100%;
 }
 
 main {
