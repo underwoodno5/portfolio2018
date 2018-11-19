@@ -7,3 +7,37 @@ $secondary-color: rgb(14, 209, 243);
 @mixin easeOut {
   transition: all 0.7s ease-out;
 }
+
+//Text Colour
+@function set-text-color($color) {
+  @if (lightness($color) >40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+//Media queries
+
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171) {
+    @content;
+  }
+}
