@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Portfolio work",
   "main": "index.js",
-  "homepage": "https://underwoodno5.github.io/portfolio",
+  "homepage": "https://underwoodno5.github.io/portfolio2018",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive ",
     "deploy": "gh-pages -d dist"
