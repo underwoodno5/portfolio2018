@@ -277,6 +277,13 @@
         }
       }
     }
+    &#skynboone {
+      .app-content {
+        &.three {
+          height: auto;
+        }
+      }
+    }
     //About
     &#about {
       .text-container {
