@@ -838,6 +838,8 @@ button:focus {
         width: 50%; }
     main#isspass .app-content.three .text-container ul, main#woodlog .app-content.three .text-container ul, main#skynboone .app-content.three .text-container ul {
       width: 100%; }
+  main#skynboone .app-content.three {
+    height: auto; }
   main#about .text-container {
     width: 100%;
     padding: 0 1rem;
