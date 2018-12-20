@@ -814,7 +814,7 @@ button:focus {
     padding-top: 1rem; }
     main#isspass .work-head-container .laptop-image, main#woodlog .work-head-container .laptop-image, main#skynboone .work-head-container .laptop-image {
       height: calc(100vh - 1rem);
-      max-height: 23rem; }
+      max-height: 19rem; }
   main#isspass .app-content ul, main#woodlog .app-content ul, main#skynboone .app-content ul {
     height: auto; }
   main#isspass .app-content.one, main#woodlog .app-content.one, main#skynboone .app-content.one {
