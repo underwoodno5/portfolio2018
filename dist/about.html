@@ -6,14 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/main.css" />
     <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand|Raleway:400,300,200,100"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:200,400"
+      rel="stylesheet"
+    />
+
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
-    <title>About</title>
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="./favicomatic/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="./favicomatic/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="./favicomatic/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="./favicomatic/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="./favicomatic/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="./favicomatic/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="./favicomatic/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="./favicomatic/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicomatic/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link rel="icon" type="image/png" href="./favicomatic/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./favicomatic/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./favicomatic/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./favicomatic/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./favicomatic/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./favicomatic/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./favicomatic/mstile-310x310.png" />
+    <title>Ian MacDonald</title>
   </head>
-  <body>
+  <body onload="pageLoad()" onscroll="pageScroll()">
     <header>
       <div class="menu-btn">
         <div class="btn-line"></div>
@@ -21,14 +87,18 @@
         <div class="btn-line"></div>
       </div>
       <div class="menu">
-        <div class="menu-branding"><div class="portrait"></div></div>
+        <div class="menu-branding">
+          <div class="name">Ian MacDonald - Code and design</div>
+        </div>
         <ul class="menu-nav">
-          <li class="nav-item"><a href="/" class="nav-link"> Home </a></li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link current"> About </a>
+          <li class="nav-item current">
+            <a href="/" class="nav-link"> Work </a>
           </li>
           <li class="nav-item">
-            <a href="work.html" class="nav-link"> Work </a>
+            <a href="about.html" class="nav-link"> About </a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link"> Misc </a>
           </li>
           <li class="nav-item">
             <a href="contact.html" class="nav-link"> Get at me </a>
@@ -38,49 +108,61 @@
     </header>
 
     <main id="about">
-      <h1 class="lg-heading">About</h1>
-      <h2 class="sm-heading">Here's a few things</h2>
-      <div class="about-info">
-        <img src="images/faces.jpg" alt="Ian Mac" class="bio-image" />
-        <div class="bio">
-          <h3 class="text-secondary">BIO</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-            tempora commodi eos, facilis perspiciatis voluptates itaque, facere
-            vero amet iste quos, perferendis hic enim nemo! A eaque iste atque
-            molestiae!
-          </p>
-        </div>
-
-        <div class="job job-1">
-          <h3>Butts</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-            voluptatum laudantium earum expedita possimus impedit quia error
-            dignissimos eligendi eos?
-          </p>
-        </div>
-        <div class="job job-2">
-          <h3>Farts</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-            voluptatum laudantium earum expedita possimus impedit quia error
-            dignissimos eligendi eos?
-          </p>
-        </div>
-        <div class="job job-3">
-          <h3>Fluffs</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-            voluptatum laudantium earum expedita possimus impedit quia error
-            dignissimos eligendi eos?
-          </p>
+      <div class="top-nav-container info">
+        <div class="top-nav">
+          <div class="name">Ian MacDonald - Code and design</div>
+          <div class="nav-item-container">
+            <div class="top-nav-item"><a href="./">Home</a></div>
+            <div class="top-nav-item"><a href="./about.html">About</a></div>
+            <div class="top-nav-item"><a href="./work.html">Work</a></div>
+          </div>
         </div>
       </div>
-    </main>
+      <div class="head-container">
+      </div>
+      <div class="text-container">
+        <h2>Pretty much every freelance site describes themselves 
+          and their work the same. They're <span class="text-secondary">individuals</span>  who create <span class="text-secondary">meaningful,
+            user-based design</span> that comes from a passion for <span class="text-secondary">
+              solving problems through collaboration.</span>
+        </h2>
+        <p>There's nothing that grand going on here. I like to code, I like to write. I'm willing
+          to sit and do both for hours on end but one pays well and one doesn't.
+        </p>
+        <p>
+          I have a degree, I've traveled a bunch, I like to read, and none of that really
+          matters. Nobody hires freelancers because they're interesting.
+          Take a look at my work, <a href="mailto:ianfmacdonald@gmail.com">ask me some questions</a>, or
+          poke around my <a href="https://github.com/underwoodno5/">github</a>. If you feel like I'm a 
+          good fit, <a href="mailto:ianfmacdonald@gmail.com">get at me</a>.
+        </p>
 
-    <footer id="main-footer">Copyright &copy; 2018</footer>
+        <p>
+          Also, I'm a big fan of the <a href="https://en.wikipedia.org/wiki/Free_software_movement">FSF</a>
+          and the <a href="https://en.wikipedia.org/wiki/Open-source-software_movement">OSSM</a>. So feel free to
+          rip apart, open up, use, and abuse anything you find around this site.
+        </p>
 
+        <ul>
+          <li>Things I like lately that you should too</li>
+          <li>Propagating plants</li>
+          <li> <a href="https://www.youtube.com/watch?v=886PIT-bM1g"> Drinking tea</a></li>
+          <li><a href="https://qz.com/1407450/theres-already-a-blueprint-for-a-more-accessible-internet/">Accessibility in web design</a></li>
+          <li><a href="https://blockgeeks.com/guides/dapps/#ethereum">DAPPS</a> and the <a href="https://www.stateofthedapps.com/"> Etherium chain</a></li>
+          <li> <a href="https://www.youtube.com/watch?v=IJrKlSkxRHA">This one track</a></li>
+
+        </ul>
+
+      </div>
+      
+      <footer>
+          <div class="footer-link-container">
+            <h4>Get at me: ianfmacdonald@gmail.com</h4>
+            <div class="icons">
+              <a href=""> <i class="fab fa-github "></i> </a>
+            </div>
+          </div>
+        </footer>
     <script src="js/main.js"></script>
   </body>
 </html>

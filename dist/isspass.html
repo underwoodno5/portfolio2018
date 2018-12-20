@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik|Montserrat|Quicksand|Raleway:400,300,200,100"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:200,400"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Ian MacDonald</title>
+  </head>
+  <body onload="pageLoad()">
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <div class="menu">
+        <div class="menu-branding">
+          <div class="name">Ian MacDonald - Code and design</div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item current">
+            <a href="./" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link"> About </a>
+          </li>
+          <li class="nav-item">
+            <a href="./work.html" class="nav-link"> Misc </a>
+          </li>
+
+        </ul>
+      </div>
+    </header>
+
+    <main id="isspass">
+      <div class="top-nav-container">
+        <div class="top-nav">
+          <div class="name">Ian MacDonald - Code and design</div>
+          <div class="top-nav-item">
+            <a href="./" class="nav-link"> Home </a>
+          </div>
+          <div class="top-nav-item">
+            <a href="./about.html" class="nav-link"> About </a>
+          </div>
+          <div class="top-nav-item">
+            <a href="./work.html" class="nav-link"> Misc </a>
+          </div>
+        </div>
+      </div>
+      <div class="work-head-container"><div class="laptop-image"></div></div>
+      <div class="app-content one">
+        <p>
+          I'd heard from a few astrophotographers that wanted an app to track
+          space objects. They all had the same complaints about their current
+          technology -
+          <span class="work-highlight"
+            >it was too complicated, slow, and bloated</span
+          >. With that in mind I set out to make a simple app to
+          <span class="work-highlight"
+            >track the international space station</span
+          >.
+        </p>
+      </div>
+      <div class="app-content two">
+        <div class="text-container">
+          <h2>The Data</h2>
+          <p>
+            Finding the right source for the right data was the first task.
+            There's a number of APIs that have information on the Space Station,
+            including NASA itself, and the best choice had a few criteria to
+            meet.
+          </p>
+          <ul>
+            <li>
+              <b>Open Source</b> - the API had to meet
+              <a
+                href="https://en.wikipedia.org/wiki/Free_Software_Foundation"
+                target="_blank"
+                style="target-new: tab;"
+              >
+                FSM </a
+              >criteria. All code should be freely available..
+            </li>
+            <li>
+              <b>Accurate</b> - at any given moment the APIs predictions and the
+              NASA stated position should be the same.
+            </li>
+            <li>
+              <b>Easily accessible</b> - keys and accounts are ok, but no
+              paywalls or anything impeding access.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="app-content three">
+        <div class="info-card">
+          <img src="./images/isstimecheck.jpg" alt="All times are fine" />
+          <img src="./images/isstimecheck2.jpg" alt="All times are fine" />
+        </div>
+        <div class="text-container">
+          <h2>Accuracy</h2>
+          <p>
+            Checking the chosen API prediction times against the current NASA
+            location returned good results. Any incorrect predictions were
+            outliers and those outliers were within an acceptable 10-minute
+            margin of error.
+          </p>
+          <p>With that finished I had to decide on the development stack:</p>
+          <ul>
+              <li>
+                <b>GraphQL</b> - the API feeds us a huge amount of data we don't need, which makes it a good candidate for GraphQL.
+            </ul>
+            <ul>
+              </li>
+              <li>
+                <b>React</b> - reusable components and fast iteration: the perfect option.
+              </li>
+            </ul>
+
+
+        </div>
+      </div>
+      <div class="app-content four">
+        <video autoplay="true" loop="true">
+          <source
+            src="./images/portfolio photos/phonemockiss.m4v"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <a href="https://shielded-ocean-17165.herokuapp.com/"> <div class="text-container" style="margin: auto;
+      display: block;
+      width: 11rem;"> <p>Check out the app -></p></div></a>
+    </main>
+    <footer>
+      <div class="footer-link-container">
+        <h4>Get at me: ianfmacdonald@gmail.com</h4>
+        <div class="icons">
+          <a href=""> <i class="fab fa-github "></i> </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+      ScrollReveal().reveal('.head-image-container', {
+        scrollUp: true,
+        delay: 300,
+        distance: '200px',
+        duration: 1500
+      });
+      ScrollReveal().reveal('.text-container', {
+        scrollUp: true,
+        delay: 300,
+        distance: '200px',
+        duration: 1500
+      });
+      ScrollReveal().reveal('.info-card', {
+        scrollUp: true,
+        delay: 300,
+        distance: '200px',
+        duration: 1500
+      });
+    </script>
+  </body>
+</html>

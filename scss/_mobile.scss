@@ -1,20 +1,125 @@
 //Widescreens
 @include mediaXl {
+  main {
+    &#home {
+      .work-item {
+        height: 100vh;
+      }
+    }
+  }
 }
 
 //Desktops & Laptops
 @include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main {
+    .top-nav-container,
+    .head-container {
+      margin: 0 5rem;
+      padding: 0;
+    }
+    &#about {
+      .top-nav-container,
+      .head-container {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
 }
 
 //Tablets
 @include mediaMd {
+  .menu-btn {
+    display: block;
+  }
+
   main {
     align-items: center;
-    text-align: center;
+    .top-nav-container {
+      visibility: hidden;
+    }
 
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
+    }
+
+    &#home {
+      .head-container {
+        width: 100%;
+        padding: 0;
+        .main-heading {
+          width: 95%;
+          margin: 5rem auto 1rem auto;
+        }
+      }
+      .text-container {
+        margin: 5rem auto;
+        width: 70%;
+      }
+      .work-item {
+        height: 30rem;
+        .work-image {
+          background-size: contain;
+        }
+        .work-card {
+          padding: 1rem 0 0 2rem;
+        }
+        &.two {
+          padding: 1rem 1rem 0 0;
+        }
+      }
+    }
+
+    //Appsites
+
+    &#woodlog,
+    &#isspass,
+    &#skynboone {
+      .top-nav-container {
+        display: none;
+      }
+      .app-content {
+        &.one {
+          padding-top: 7rem;
+          p {
+            width: 80%;
+          }
+        }
+
+        &.two {
+          .head-image-container {
+            height: 20rem;
+            img {
+              width: 48%;
+            }
+          }
+          .text-container {
+            width: 70%;
+          }
+        }
+        &.three {
+          .head-image-container {
+            video {
+              width: 100%;
+            }
+          }
+          .text-container {
+            width: 70%;
+          }
+        }
+      }
+    }
+    //About
+    &#about {
+      .text-container {
+        width: 75%;
+        margin: 5rem auto;
+      }
     }
   }
   ul.menu-nav,
@@ -53,11 +158,141 @@
       'job3';
     grid-template-columns: 1fr;
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 //Smartphones
 @include mediaSm {
   main#home h1 {
     margin-top: 10vh;
+  }
+
+  main {
+    .head-container {
+      padding: 0;
+      margin-bottom: 12rem;
+      .main-heading {
+        width: 90%;
+      }
+    }
+    //Main
+    &#home {
+      .work-item {
+        padding: 0;
+        flex-wrap: wrap;
+        height: 40rem;
+        &.one,
+        &.two,
+        &.three {
+          padding: 0rem;
+          border: none;
+          .work-card {
+            width: 100%;
+            height: 44%;
+            padding: 0;
+            .card-head {
+              .title-container {
+                padding-left: 5px;
+                width: 150px;
+              }
+              .content-container {
+                width: 53%;
+              }
+            }
+            .btn {
+              margin: 6rem auto;
+              display: block;
+            }
+            .btn {
+              width: 30%;
+              margin-top: 2rem;
+            }
+          }
+          .work-image {
+            width: 100%;
+            height: 56%;
+          }
+        }
+
+        &.two {
+          .work-card {
+            order: 0;
+          }
+          .work-image {
+            order: 1;
+          }
+        }
+      }
+    }
+    //Appsites
+    &#isspass,
+    &#woodlog,
+    &#skynboone {
+      .work-head-container {
+        padding-top: 1rem;
+        .laptop-image {
+          height: calc(100vh - 1rem);
+        }
+      }
+      .app-content {
+        ul {
+          height: auto;
+        }
+        &.one {
+          height: auto;
+        }
+        &.two {
+          height: auto;
+        }
+        &.three {
+          height: 66rem;
+          margin-bottom: 10rem;
+          .head-image-container {
+            &.two {
+              padding: 0;
+              height: auto;
+              &.two {
+                img,
+                video {
+                  max-width: 100%;
+                }
+              }
+            }
+          }
+          .info-card {
+            width: 100%;
+            height: auto;
+            img {
+              width: 50%;
+            }
+          }
+          .text-container {
+            ul {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    //About
+    &#about {
+      .text-container {
+        width: 100%;
+        padding: 0 1rem;
+        margin: 5rem auto;
+        p {
+          padding: 0 2%;
+        }
+      }
+    }
+  }
+  footer {
+    .footer-link-container {
+      width: 100%;
+      padding-left: 5%;
+    }
   }
 }
