@@ -200,8 +200,14 @@
     //Main
     &#home {
       .head-container {
-        min-height: calc(100vh - 10rem);
-        margin-top: 10rem;
+        min-height: calc(100vh - 6rem);
+        margin-top: 6rem;
+        .main-heading {
+          margin: 0 auto;
+        }
+        .down-arrow {
+          bottom: 5px;
+        }
       }
       .work-item {
         padding: 0;
