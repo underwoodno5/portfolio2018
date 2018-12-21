@@ -647,18 +647,18 @@ main#about .head-container {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-main .head-container {
+main#misc .head-container {
   min-height: auto;
   text-align: center; }
 
-main .item-container {
+main#misc .item-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 8rem 8rem; }
-  main .item-container .item {
+  main#misc .item-container .item {
     width: 15%; }
-    main .item-container .item img {
+    main#misc .item-container .item img {
       width: 100%; }
 
 button:focus {
