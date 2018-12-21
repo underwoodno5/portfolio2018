@@ -866,6 +866,8 @@ button:focus {
     margin: 5rem auto; }
     main#about .text-container p {
       padding: 0 2%; }
+    main#about .text-container ul {
+      padding-left: 1rem; }
   footer .footer-link-container {
     width: 100%;
     padding-left: 5%; } }
