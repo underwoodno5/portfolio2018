@@ -10,7 +10,7 @@ $secondary-color: rgb(14, 209, 243);
 }
 
 @mixin easeShow {
-  transition: all 1.5s ease;
+  transition: all 1s ease-out;
 }
 
 @mixin pageFade {

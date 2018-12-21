@@ -169,31 +169,36 @@ main#home {
   background-color: #eff3f6; }
   main#home h1 {
     margin-top: 20vh; }
+  main#home .main-heading {
+    max-width: 800px; }
   main#home .text-container {
     width: 60%;
-    margin: 7rem auto; }
+    margin: 7rem auto;
+    max-width: 800px; }
     main#home .text-container p {
       opacity: 0;
-      transform: translate3d(200px, 0, 0);
-      transition: all 1.5s ease; }
+      transform: translate3d(150px, 0, 0);
+      transition: all 1s ease-out; }
       main#home .text-container p.show {
         opacity: 1;
         transform: translate3d(0, 0, 0);
-        transition: all 1.5s ease; }
-  main#home .line {
-    display: block;
-    opacity: 0;
-    margin: auto; }
-    main#home .line.show {
-      opacity: 1; }
-    main#home .line.one {
-      transition: all 1s ease; }
-    main#home .line.two {
-      transition: all 4s ease; }
-    main#home .line.three {
-      transition: all 7s ease; }
-    main#home .line.four {
-      transition: all 10s ease; }
+        transition: all 1s ease-out; }
+  main#home .line-container {
+    height: 100px; }
+    main#home .line-container .line {
+      display: block;
+      opacity: 0;
+      margin: auto; }
+      main#home .line-container .line.show {
+        opacity: 1; }
+      main#home .line-container .line.one {
+        transition: all 1s ease; }
+      main#home .line-container .line.two {
+        transition: all 4s ease; }
+      main#home .line-container .line.three {
+        transition: all 7s ease; }
+      main#home .line-container .line.four {
+        transition: all 10s ease; }
 
 main .top-nav-container {
   position: fixed;
@@ -292,7 +297,8 @@ footer {
     height: 100%;
     background-size: auto;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
   .work-item .content-container {
     width: 100%;
     padding: 10px 0 0 10px;
@@ -420,6 +426,9 @@ main#woodlog .work-head-container, main#isspass .work-head-container, main#skynb
     width: 100%;
     height: calc(100vh - 3rem); }
 
+main#woodlog .text-container, main#isspass .text-container, main#skynboone .text-container {
+  max-width: 60rem; }
+
 main#woodlog .app-content, main#isspass .app-content, main#skynboone .app-content {
   height: 42rem;
   width: 100%; }
@@ -441,7 +450,8 @@ main#woodlog .app-content, main#isspass .app-content, main#skynboone .app-conten
       font-family: 'Quicksand';
       font-size: 25px;
       line-height: 50px;
-      color: #4c4c4c; }
+      color: #4c4c4c;
+      max-width: 65rem; }
   main#woodlog .app-content.two .head-image-container, main#isspass .app-content.two .head-image-container, main#skynboone .app-content.two .head-image-container {
     height: 27rem;
     justify-content: space-between; }
@@ -613,7 +623,8 @@ main#about .top-nav-container {
 
 main#about .text-container {
   width: 60%;
-  margin: 6rem 10rem; }
+  margin: 6rem 10rem;
+  min-height: calc(100vh - 20rem); }
   main#about .text-container h2 {
     font-family: 'Montserrat';
     margin-bottom: 2rem; }
@@ -636,23 +647,19 @@ main#about .head-container {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-.boxes {
+main .head-container {
+  min-height: auto;
+  text-align: center; }
+
+main .item-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem; }
-  .boxes div {
-    font-size: 2rem;
-    border: 2px #fff solid;
-    margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #0ed1f3;
-      color: #000; }
-      .boxes div:hover span {
-        color: #000; }
+  justify-content: space-around;
+  padding: 8rem 8rem; }
+  main .item-container .item {
+    width: 15%; }
+    main .item-container .item img {
+      width: 100%; }
 
 button:focus {
   outline: 0; }
@@ -689,7 +696,13 @@ button:focus {
 
 @media screen and (min-width: 1600px) {
   main#home .work-item {
-    height: 100vh; } }
+    height: 100vh; }
+  main#home .head-container .down-arrow {
+    width: 20px; }
+  main#home .line {
+    height: 900px; }
+  main#isspass .app-content.two .head-image-container, main#woodlog .app-content.two .head-image-container, main#skynboone .app-content.two .head-image-container {
+    height: auto; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -778,9 +791,12 @@ button:focus {
     margin-top: 10vh; }
   main .head-container {
     padding: 0;
-    margin-bottom: 12rem; }
+    margin-bottom: 4rem; }
     main .head-container .main-heading {
       width: 90%; }
+  main#home .head-container {
+    min-height: calc(100vh - 10rem);
+    margin-top: 10rem; }
   main#home .work-item {
     padding: 0;
     flex-wrap: wrap;

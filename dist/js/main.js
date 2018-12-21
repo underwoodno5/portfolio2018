@@ -27,11 +27,13 @@ function pageScroll() {
   } else if (z <= 350 && z > -71) {
     line.forEach(item => item.classList.add('show'));
     topNav.classList.remove('show-nav');
+    topNav.classList.remove('show-about-nav');
   } else if (-350 < z && z < -71) {
     topNav.classList.add('show-nav');
+    topNav.classList.remove('show-about-nav');
   } else if (z > -72) {
     topNav.classList.remove('show-nav');
-  } else if (z < -350) {
+  } else if (z < -450) {
     topNav.classList.add('show-about-nav');
   }
 }

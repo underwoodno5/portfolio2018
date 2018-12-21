@@ -5,6 +5,25 @@
       .work-item {
         height: 100vh;
       }
+      .head-container {
+        .down-arrow {
+          width: 20px;
+        }
+      }
+      .line {
+        height: 900px;
+      }
+    }
+    &#isspass,
+    &#woodlog,
+    &#skynboone {
+      .app-content {
+        &.two {
+          .head-image-container {
+            height: auto;
+          }
+        }
+      }
     }
   }
 }
@@ -173,13 +192,17 @@
   main {
     .head-container {
       padding: 0;
-      margin-bottom: 12rem;
+      margin-bottom: 4rem;
       .main-heading {
         width: 90%;
       }
     }
     //Main
     &#home {
+      .head-container {
+        min-height: calc(100vh - 10rem);
+        margin-top: 10rem;
+      }
       .work-item {
         padding: 0;
         flex-wrap: wrap;

@@ -87,12 +87,16 @@ main {
     h1 {
       margin-top: 20vh;
     }
+    .main-heading {
+      max-width: 800px;
+    }
     .text-container {
       width: 60%;
       margin: 7rem auto;
+      max-width: 800px;
       p {
         opacity: 0;
-        transform: translate3d(200px, 0, 0);
+        transform: translate3d(150px, 0, 0);
         @include easeShow;
 
         &.show {
@@ -102,24 +106,27 @@ main {
         }
       }
     }
-    .line {
-      display: block;
-      opacity: 0;
-      margin: auto;
-      &.show {
-        opacity: 1;
-      }
-      &.one {
-        transition: all 1s ease;
-      }
-      &.two {
-        transition: all 4s ease;
-      }
-      &.three {
-        transition: all 7s ease;
-      }
-      &.four {
-        transition: all 10s ease;
+    .line-container {
+      height: 100px;
+      .line {
+        display: block;
+        opacity: 0;
+        margin: auto;
+        &.show {
+          opacity: 1;
+        }
+        &.one {
+          transition: all 1s ease;
+        }
+        &.two {
+          transition: all 4s ease;
+        }
+        &.three {
+          transition: all 7s ease;
+        }
+        &.four {
+          transition: all 10s ease;
+        }
       }
     }
   }
@@ -242,6 +249,7 @@ footer {
     background-size: auto;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
   .content-container {
     width: 100%;
@@ -428,6 +436,9 @@ main {
         height: calc(100vh - 3rem);
       }
     }
+    .text-container {
+      max-width: 60rem;
+    }
     .app-content {
       height: 42rem;
       width: 100%;
@@ -453,6 +464,7 @@ main {
           font-size: 25px;
           line-height: 50px;
           color: #4c4c4c;
+          max-width: 65rem;
         }
       }
       &.two {
@@ -683,12 +695,12 @@ main {
       }
       .top-nav {
         background: none;
-      
       }
     }
     .text-container {
       width: 60%;
       margin: 6rem 10rem;
+      min-height: calc(100vh - 20rem);
       h2 {
         font-family: 'Montserrat';
         margin-bottom: 2rem;
@@ -719,26 +731,21 @@ main {
   }
 }
 
-//Contact page
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem;
-
-  div {
-    font-size: 2rem;
-    border: 2px #fff solid;
-    margin-bottom: 3rem;
-    @include easeOut;
-
-    &:hover {
-      padding: 0.5rem 1.5rem;
-      background: $secondary-color;
-      color: set-text-color($secondary-color);
-      span {
-        color: set-text-color($secondary-color);
+//Misc
+main {
+  .head-container {
+    min-height: auto;
+    text-align: center;
+  }
+  .item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 8rem 8rem;
+    .item {
+      width: 15%;
+      img {
+        width: 100%;
       }
     }
   }
