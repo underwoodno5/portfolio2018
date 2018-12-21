@@ -770,6 +770,8 @@ button:focus {
     ul.menu-nav.show,
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
+  ul.menu-nav {
+    padding-bottom: 7rem; }
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
