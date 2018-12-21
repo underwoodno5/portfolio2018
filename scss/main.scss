@@ -733,19 +733,21 @@ main {
 
 //Misc
 main {
-  .head-container {
-    min-height: auto;
-    text-align: center;
-  }
-  .item-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 8rem 8rem;
-    .item {
-      width: 15%;
-      img {
-        width: 100%;
+  &#misc {
+    .head-container {
+      min-height: auto;
+      text-align: center;
+    }
+    .item-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 8rem 8rem;
+      .item {
+        width: 15%;
+        img {
+          width: 100%;
+        }
       }
     }
   }
