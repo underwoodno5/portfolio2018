@@ -14,6 +14,7 @@ const info = document.querySelector('.info');
 const downArrow = document.querySelector('.down-arrow');
 const topInfo = document.querySelector('.top-info');
 const line = document.querySelectorAll('.line');
+const first = document.querySelectorAll('.first');
 
 //scroll function
 function pageScroll() {

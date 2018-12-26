@@ -108,7 +108,9 @@ main {
       }
     }
     .line-container {
-      height: calc(100vh / 4.5);
+      height: calc(100vh / 5);
+      overflow: hidden;
+      margin-top: 20px;
       .line {
         display: block;
         opacity: 0;
@@ -200,6 +202,11 @@ footer {
       float: left;
     }
   }
+}
+
+//Animation class
+.animate-line {
+  @include backgroundFade;
 }
 
 //Work
@@ -714,7 +721,9 @@ main {
         list-style-type: none;
         li:nth-child(1) {
           font-family: 'Montserrat';
-          margin-bottom: 0.4rem;
+          margin-bottom: 0.6rem;
+          border-bottom: 1px black solid;
+          width: 19rem;
         }
         li {
           font-family: 'Muli';
@@ -745,7 +754,8 @@ main {
       justify-content: space-around;
       padding: 8rem 8rem;
       .item {
-        width: 15%;
+        width: 30%;
+        margin-right: 5px;
         img {
           width: 100%;
         }

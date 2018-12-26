@@ -21,6 +21,20 @@ $secondary-color: rgb(14, 209, 243);
   transition: all 2s ease-out;
 }
 
+@mixin backgroundFade {
+  animation: background 3s ease;
+}
+
+//Animations
+@keyframes background {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
 //Text Colour
 @function set-text-color($color) {
   @if (lightness($color) >40) {
