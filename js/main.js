@@ -14,6 +14,7 @@ const info = document.querySelector('.info');
 const downArrow = document.querySelector('.down-arrow');
 const topInfo = document.querySelector('.top-info');
 const line = document.querySelectorAll('.line');
+const first = document.querySelectorAll('.first');
 
 //scroll function
 function pageScroll() {
@@ -26,6 +27,7 @@ function pageScroll() {
     topNav.classList.remove('show-nav');
   } else if (z <= 350 && z > -71) {
     line.forEach(item => item.classList.add('show'));
+    downArrow.classList.remove('slow-fade');
     topNav.classList.remove('show-nav');
     topNav.classList.remove('show-about-nav');
   } else if (-350 < z && z < -71) {
