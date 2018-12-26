@@ -26,6 +26,7 @@ function pageScroll() {
     topNav.classList.remove('show-nav');
   } else if (z <= 350 && z > -71) {
     line.forEach(item => item.classList.add('show'));
+    downArrow.classList.remove('slow-fade');
     topNav.classList.remove('show-nav');
     topNav.classList.remove('show-about-nav');
   } else if (-350 < z && z < -71) {

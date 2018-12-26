@@ -29,7 +29,7 @@
   top: 0;
   width: 100%;
   visibility: hidden;
-  opacity: 0.9; }
+  opacity: 0.97; }
   .menu.show {
     visibility: visible; }
   .menu-branding, .menu-nav {
@@ -106,7 +106,8 @@ body {
   opacity: 0; }
 
 .down-arrow {
-  opacity: 0; }
+  opacity: 0;
+  transition: all 0.5s ease-out; }
 
 .fade-in {
   opacity: 1;
@@ -184,7 +185,7 @@ main#home {
         transform: translate3d(0, 0, 0);
         transition: all 1s ease-out; }
   main#home .line-container {
-    height: 100px; }
+    height: calc(100vh / 4.5); }
     main#home .line-container .line {
       display: block;
       opacity: 0;

@@ -12,6 +12,7 @@ body {
 }
 .down-arrow {
   opacity: 0;
+  @include easeOut;
 }
 .fade-in {
   opacity: 1;
@@ -107,7 +108,7 @@ main {
       }
     }
     .line-container {
-      height: 100px;
+      height: calc(100vh / 4.5);
       .line {
         display: block;
         opacity: 0;
