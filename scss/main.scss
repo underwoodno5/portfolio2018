@@ -728,12 +728,13 @@ main {
         }
       }
     }
+
     .head-container {
       background-image: url('../images/ian.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-attachment: fixed;
+      background-attachment: scroll;
     }
   }
 }
