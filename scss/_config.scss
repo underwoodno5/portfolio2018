@@ -7,22 +7,27 @@ $secondary-color: rgb(14, 209, 243);
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
 }
 
 @mixin easeShow {
   transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
 }
 
 @mixin pageFade {
   transition: all 0.8s ease-out;
+  -webkit-transition: all 0.8s ease-out;
 }
 
 @mixin slowFade {
   transition: all 2s ease-out;
+  -webkit-transition: all 2s ease-out;
 }
 
 @mixin backgroundFade {
   animation: background 3s ease;
+  -webkit-animation: background 3s ease;
 }
 
 //Animations
