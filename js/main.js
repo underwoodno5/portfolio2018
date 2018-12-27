@@ -9,7 +9,9 @@ const link = document.querySelectorAll('a');
 const main = document.querySelector('main');
 const mainScroll = document.getElementById('home');
 const topNav = document.querySelector('.top-nav-container');
-const scrollTop = window.pageYOffset;
+/*This const below and the math at the top of the pagescroll function 
+is the optimal way (I know) to find scroll position. Works in IE, Safari, and Chrome.*/
+const el = document.scrollingElement || document.documentElement;
 const info = document.querySelector('.info');
 const downArrow = document.querySelector('.down-arrow');
 const topInfo = document.querySelector('.top-info');
@@ -18,15 +20,15 @@ const first = document.querySelectorAll('.first');
 
 //scroll function
 function pageScroll() {
-  var x = document.documentElement.scrollTop;
+  var x = el.scrollTop;
   var y = info.offsetTop;
   var z = y - x;
-  console.log(z);
+  console.log(el.scrollTop);
   if (z <= 560 && z > 350) {
     topInfo.classList.add('show');
     topNav.classList.remove('show-nav');
   } else if (z <= 350 && z > -71) {
-    line.forEach(item => item.classList.add('show'));
+    line.forEach(item => item.classList.add('line-fade'));
     downArrow.classList.remove('slow-fade');
     topNav.classList.remove('show-nav');
     topNav.classList.remove('show-about-nav');
