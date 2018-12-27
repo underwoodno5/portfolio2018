@@ -543,24 +543,24 @@ main {
 
   &#woodlog {
     .work-highlight {
-      color: #4051b5;
+      color: #2178ff;
     }
     .top-nav-container {
-      background-color: #4051b5;
+      background-color: #2178ff;
       a:hover {
         color: #c2c2b7;
         @include easeOut;
       }
     }
     .work-head-container {
-      background-color: #3f4ebc;
+      background-color: #2178ff;
       .laptop-image {
-        background-image: url('../images/hikelaptop.jpg');
+        background-image: url('../images/hikelaptopnew.png');
       }
     }
     .head-image-container {
       width: 100%;
-      background-color: #3e51b5;
+      background-color: #309cff;
       display: flex;
       align-items: center;
     }
@@ -605,7 +605,7 @@ main {
         }
       }
       &.three {
-        height: 85rem;
+        height: auto;
         margin-top: 0;
 
         .head-image-container {
