@@ -1,9 +1,10 @@
 //Mennnnu
 .menu-btn {
   position: absolute;
+  width: 70px;
+  height: 70px;
+  padding: 24px 15px;
   z-index: 3;
-  right: 35px;
-  top: 35px;
   cursor: pointer;
   @include easeOut;
   display: none;
