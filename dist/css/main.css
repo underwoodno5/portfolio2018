@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box; }
 
-@keyframes background {
+@keyframes line {
   0% {
-    background-color: red; }
+    opacity: 0; }
   100% {
-    background-color: blue; } }
+    opacity: 1; } }
 
 .menu-btn {
   position: absolute;
@@ -212,16 +212,20 @@ main#home {
       display: block;
       opacity: 0;
       margin: auto; }
-      main#home .line-container .line.show {
-        opacity: 1; }
-      main#home .line-container .line.one {
-        transition: all 1s ease; }
+      main#home .line-container .line.line-fade {
+        animation: line 2s ease-out;
+        animation-fill-mode: forwards;
+        -webkit-animation: line 2s ease-out;
+        -webkit-animation-fill-mode: forwards; }
       main#home .line-container .line.two {
-        transition: all 4s ease; }
+        animation-delay: 1s;
+        -webkit-animation-delay: 1s; }
       main#home .line-container .line.three {
-        transition: all 7s ease; }
+        animation-delay: 2s;
+        -webkit-animation-delay: 2s; }
       main#home .line-container .line.four {
-        transition: all 10s ease; }
+        animation-delay: 3s;
+        -webkit-animation-delay: 3s; }
 
 main .top-nav-container {
   position: fixed;
@@ -281,10 +285,6 @@ footer {
       width: 20%;
       margin: 0;
       float: left; }
-
-.animate-line {
-  animation: background 3s ease;
-  -webkit-animation: background 3s ease; }
 
 .work-item {
   width: 100%;
@@ -677,7 +677,7 @@ main#about .text-container {
 main#about .head-container {
   background-image: url("../images/ian.jpg");
   background-size: cover;
-  background-position: 50% 90%;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
@@ -730,6 +730,27 @@ button:focus {
   color: #000;
   height: 60px; }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black; }
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px; }
+
 @media screen and (min-width: 1600px) {
   main#home .work-item {
     height: 100vh; }
@@ -739,18 +760,6 @@ button:focus {
     height: 900px; }
   main#isspass .app-content.two .head-image-container, main#woodlog .app-content.two .head-image-container, main#skynboone .app-content.two .head-image-container {
     height: auto; } }
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  .projects {
-    grid-template-columns: repeat(3, 1fr); }
-  main .top-nav-container,
-  main .head-container {
-    margin: 0 5rem;
-    padding: 0; }
-  main#about .top-nav-container,
-  main#about .head-container {
-    margin: 0;
-    padding: 0; } }
 
 @media screen and (max-width: 768px) {
   .menu-btn {
@@ -839,6 +848,8 @@ button:focus {
       margin: 0 auto; }
     main#home .head-container .down-arrow {
       bottom: 5px; }
+  main#home .line-container {
+    height: calc(100vh / 10); }
   main#home .work-item {
     padding: 0;
     flex-wrap: wrap;

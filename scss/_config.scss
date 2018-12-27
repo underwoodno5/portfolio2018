@@ -25,18 +25,20 @@ $secondary-color: rgb(14, 209, 243);
   -webkit-transition: all 2s ease-out;
 }
 
-@mixin backgroundFade {
-  animation: background 3s ease;
-  -webkit-animation: background 3s ease;
+@mixin lineFade {
+  animation: line 2s ease-out;
+  animation-fill-mode: forwards;
+  -webkit-animation: line 2s ease-out;
+  -webkit-animation-fill-mode: forwards;
 }
 
 //Animations
-@keyframes background {
+@keyframes line {
   0% {
-    background-color: red;
+    opacity: 0;
   }
   100% {
-    background-color: blue;
+    opacity: 1;
   }
 }
 

@@ -30,24 +30,6 @@
 
 //Desktops & Laptops
 @include mediaLg {
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  main {
-    .top-nav-container,
-    .head-container {
-      margin: 0 5rem;
-      padding: 0;
-    }
-    &#about {
-      .top-nav-container,
-      .head-container {
-        margin: 0;
-        padding: 0;
-      }
-    }
-  }
 }
 
 //Tablets
@@ -211,6 +193,9 @@
         .down-arrow {
           bottom: 5px;
         }
+      }
+      .line-container {
+        height: calc(100vh / 10);
       }
       .work-item {
         padding: 0;
