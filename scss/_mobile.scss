@@ -317,6 +317,14 @@
         }
       }
     }
+
+    &.isspass {
+      .app-content {
+        &.three {
+          margin-bottom: 20rem;
+        }
+      }
+    }
     //About
     &#about {
       .text-container {
