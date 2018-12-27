@@ -916,7 +916,9 @@ button:focus {
     main#about .text-container p {
       padding: 0 2%; }
     main#about .text-container ul {
-      padding-left: 1rem; }
+      padding-left: 0; }
+  main#about .head-container {
+    background-attachment: scroll; }
   footer .footer-link-container {
     width: 100%;
     padding-left: 5%; } }
