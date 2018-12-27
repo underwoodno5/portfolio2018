@@ -14,13 +14,15 @@
   top: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
   display: none; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: black;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -53,13 +55,15 @@
     padding: 0;
     background: #f2f2f2;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background-color: white;
     transform: translate3d(0, 100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -71,7 +75,8 @@
       opacity: 1; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
@@ -85,7 +90,8 @@
     font-weight: 300;
     color: black;
     text-decoration: none;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
       color: #0ed1f3; }
 
@@ -109,23 +115,28 @@ body {
   font-family: 'Verdana';
   line-height: 1.5;
   transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
   opacity: 0; }
 
 .down-arrow {
   opacity: 0;
-  transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out; }
 
 .fade-in {
   opacity: 1;
-  transition: all 0.8s ease-out; }
+  transition: all 0.8s ease-out;
+  -webkit-transition: all 0.8s ease-out; }
 
 .slow-fade {
   opacity: 1;
-  transition: all 2s ease-out; }
+  transition: all 2s ease-out;
+  -webkit-transition: all 2s ease-out; }
 
 .top-nav-container {
   opacity: 0;
-  transition: all 0.8s ease-out; }
+  transition: all 0.8s ease-out;
+  -webkit-transition: all 0.8s ease-out; }
 
 .show-nav {
   opacity: 1; }
@@ -169,7 +180,8 @@ main .icons {
     padding: 0.4rem; }
     main .icons a:hover {
       color: #0ed1f3;
-      transition: all 0.5s ease-out; }
+      transition: all 0.5s ease-out;
+      -webkit-transition: all 0.5s ease-out; }
 
 main#home {
   overflow: hidden;
@@ -185,11 +197,13 @@ main#home {
     main#home .text-container p {
       opacity: 0;
       transform: translate3d(150px, 0, 0);
-      transition: all 1s ease-out; }
+      transition: all 1s ease-out;
+      -webkit-transition: all 1s ease-out; }
       main#home .text-container p.show {
         opacity: 1;
         transform: translate3d(0, 0, 0);
-        transition: all 1s ease-out; }
+        transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out; }
   main#home .line-container {
     height: calc(100vh / 5);
     overflow: hidden;
@@ -222,7 +236,8 @@ main .top-nav-container {
     background-color: rgba(255, 255, 255, 0.5); }
     main .top-nav-container .top-nav a:hover {
       color: #0ed1f3;
-      transition: all 0.5s ease-out; }
+      transition: all 0.5s ease-out;
+      -webkit-transition: all 0.5s ease-out; }
     main .top-nav-container .top-nav .name {
       width: 50%; }
     main .top-nav-container .top-nav .nav-item-container {
@@ -268,7 +283,8 @@ footer {
       float: left; }
 
 .animate-line {
-  animation: background 3s ease; }
+  animation: background 3s ease;
+  -webkit-animation: background 3s ease; }
 
 .work-item {
   width: 100%;
@@ -426,7 +442,8 @@ main#woodlog .top-nav-container, main#isspass .top-nav-container, main#skynboone
     background-color: inherit; }
     main#woodlog .top-nav-container .top-nav a, main#isspass .top-nav-container .top-nav a, main#skynboone .top-nav-container .top-nav a {
       color: inherit;
-      transition: all 0.5s ease-out; }
+      transition: all 0.5s ease-out;
+      -webkit-transition: all 0.5s ease-out; }
 
 main#woodlog .work-head-container, main#isspass .work-head-container, main#skynboone .work-head-container {
   width: 100%;
@@ -521,7 +538,8 @@ main#woodlog .top-nav-container {
   background-color: #4051b5; }
   main#woodlog .top-nav-container a:hover {
     color: #c2c2b7;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out; }
 
 main#woodlog .work-head-container {
   background-color: #3f4ebc; }
@@ -541,7 +559,8 @@ main#skynboone .top-nav-container {
   background-color: #9e6130; }
   main#skynboone .top-nav-container a:hover {
     color: #c2c2b7;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out; }
 
 main#skynboone .work-head-container {
   background-color: #9e6130; }
@@ -588,7 +607,8 @@ main#isspass .top-nav-container {
   background-color: #375a7f; }
   main#isspass .top-nav-container a:hover {
     color: #259287;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out; }
 
 main#isspass .work-head-container {
   background-color: #375a7f; }
@@ -689,7 +709,8 @@ button:focus {
   height: 4rem;
   color: #0ed1f3;
   font-size: 1rem;
-  transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #0ed1f3;
     color: #ffff; }
