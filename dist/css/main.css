@@ -892,7 +892,7 @@ button:focus {
   main#isspass .app-content.two, main#woodlog .app-content.two, main#skynboone .app-content.two {
     height: auto; }
   main#isspass .app-content.three, main#woodlog .app-content.three, main#skynboone .app-content.three {
-    height: 66rem;
+    height: auto;
     margin-bottom: 10rem; }
     main#isspass .app-content.three .head-image-container.two, main#woodlog .app-content.three .head-image-container.two, main#skynboone .app-content.three .head-image-container.two {
       padding: 0;
@@ -911,6 +911,15 @@ button:focus {
       width: 100%; }
   main#skynboone .app-content.three {
     height: auto; }
+  main#woodlog .app-content.two {
+    height: auto; }
+    main#woodlog .app-content.two .head-image-container {
+      height: auto;
+      flex-wrap: wrap;
+      margin-top: 3rem; }
+      main#woodlog .app-content.two .head-image-container img {
+        width: 100%;
+        margin: 1rem 0; }
   main#about .text-container {
     width: 100%;
     padding: 0 1rem;

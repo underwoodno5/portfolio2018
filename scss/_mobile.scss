@@ -265,7 +265,7 @@
           height: auto;
         }
         &.three {
-          height: 66rem;
+          height: auto;
           margin-bottom: 10rem;
           .head-image-container {
             &.two {
@@ -298,6 +298,22 @@
       .app-content {
         &.three {
           height: auto;
+        }
+      }
+    }
+    &#woodlog {
+      .app-content {
+        &.two {
+          height: auto;
+          .head-image-container {
+            height: auto;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+            img {
+              width: 100%;
+              margin: 1rem 0;
+            }
+          }
         }
       }
     }
