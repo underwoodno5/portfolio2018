@@ -920,6 +920,8 @@ button:focus {
       main#woodlog .app-content.two .head-image-container img {
         width: 100%;
         margin: 1rem 0; }
+  main.isspass .app-content.three {
+    margin-bottom: 20rem; }
   main#about .text-container {
     width: 100%;
     padding: 0 1rem;
