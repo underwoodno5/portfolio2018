@@ -679,7 +679,7 @@ main#about .head-container {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll; }
+  background-attachment: fixed; }
 
 main#misc .head-container {
   min-height: auto;
@@ -917,7 +917,7 @@ button:focus {
       padding: 0 2%; }
     main#about .text-container ul {
       padding-left: 1rem; }
-  main .head-container {
+  main#about .head-container {
     background-attachment: scroll; }
   footer .footer-link-container {
     width: 100%;
