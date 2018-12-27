@@ -115,6 +115,20 @@
         }
       }
     }
+
+    &#isspass {
+      .app-content {
+        &.two {
+          height: auto;
+        }
+        &.four {
+          background: none;
+          video {
+            width: 100%;
+          }
+        }
+      }
+    }
     //About
     &#about {
       .text-container {
@@ -318,10 +332,15 @@
       }
     }
 
-    &.isspass {
+    &#isspass {
       .app-content {
         &.three {
-          margin-bottom: 20rem;
+          margin-bottom: 30rem;
+        }
+        &.four {
+          video {
+            width: 100%;
+          }
         }
       }
     }
