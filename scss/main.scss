@@ -372,6 +372,41 @@ footer {
   }
   &.three {
     padding: 3.2rem 0 0 0;
+
+    .work-image {
+      background-image: url('../images/somewordsimage.jpg');
+    }
+    .card-head {
+      .title-container {
+        &::after {
+          background-color: #c390ef9e;
+        }
+        h3 {
+          color: #c390ef9e;
+        }
+        h3::after,
+        h3::before {
+          content: 'SOME.WORDS';
+        }
+        h3::before {
+          color: rgba(195, 144, 239, 0.3);
+        }
+        h3::after {
+          color: rgba(195, 144, 239, 1);
+        }
+      }
+      .content-container {
+        width: 12.6rem;
+        padding: 10px 0 0 10px;
+        margin-top: 15px;
+        height: 75px;
+        border-left: 1px solid #375b80;
+        float: left;
+      }
+    }
+  }
+  &.four {
+    padding: 3.2rem 0 0 0;
     height: 40rem;
 
     .work-image {
@@ -412,7 +447,8 @@ footer {
 main {
   &#woodlog,
   &#isspass,
-  &#skynboone {
+  &#skynboone,
+  &#somewords {
     .top-nav-container {
       width: 100%;
       margin: 0;
@@ -676,6 +712,68 @@ main {
           margin: 0 auto 6rem auto;
           display: flex;
           justify-content: space-around;
+        }
+      }
+    }
+  }
+
+  &#somewords {
+    .work-highlight {
+      color: #d52fff;
+    }
+    .top-nav-container {
+      background-color: #ffffff;
+      .top-nav {
+        color: #00000073;
+      }
+      a:hover {
+        color: #259287;
+        @include easeOut;
+      }
+    }
+    .work-head-container {
+      background-color: #ffffff;
+      .laptop-image {
+        background-image: url('../images/somewordslaptop.jpg');
+      }
+    }
+    .head-image-container {
+      width: 100%;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+    }
+    .app-content {
+      &.one {
+        height: 41rem;
+      }
+      &.two {
+        height: 26rem;
+        .text-container {
+          p {
+            margin-bottom: 3rem;
+          }
+        }
+        li {
+          margin-bottom: 1rem;
+        }
+      }
+      &.three {
+        margin: 0rem 0 7rem 0;
+        img {
+          margin: 0 auto 6rem auto;
+          display: block;
+          box-shadow: 3px 6px 16px 2px #888888;
+        }
+      }
+      &.four {
+        margin-top: -4rem;
+        background: none;
+
+        img {
+          margin: 0 auto 6rem auto;
+          display: block;
+          box-shadow: 3px 6px 16px 2px #888888;
         }
       }
     }

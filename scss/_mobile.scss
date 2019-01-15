@@ -16,7 +16,8 @@
     }
     &#isspass,
     &#woodlog,
-    &#skynboone {
+    &#skynboone,
+    &#somewords {
       .app-content {
         &.two {
           .head-image-container {
@@ -80,7 +81,8 @@
 
     &#woodlog,
     &#isspass,
-    &#skynboone {
+    &#skynboone,
+    &#somewords {
       .top-nav-container {
         display: none;
       }
@@ -217,7 +219,8 @@
         height: 40rem;
         &.one,
         &.two,
-        &.three {
+        &.three,
+        &.four {
           padding: 0rem;
           border: none;
           .work-card {
@@ -261,7 +264,8 @@
     //Appsites
     &#isspass,
     &#woodlog,
-    &#skynboone {
+    &#skynboone,
+    &#somewords {
       .work-head-container {
         padding-top: 1rem;
         .laptop-image {
@@ -341,6 +345,13 @@
           video {
             width: 100%;
           }
+        }
+      }
+    }
+    &#somewords {
+      .app-content {
+        img {
+          width: 100%;
         }
       }
     }
