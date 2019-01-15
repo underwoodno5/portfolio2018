@@ -408,21 +408,20 @@ footer {
       border-left: 1px solid #375b80;
       float: left; }
   .work-item.three {
-    padding: 3.2rem 0 0 0;
-    height: 40rem; }
+    padding: 3.2rem 0 0 0; }
     .work-item.three .work-image {
-      background-image: url("../images/skynimage.jpg"); }
+      background-image: url("../images/somewordsimage.jpg"); }
     .work-item.three .card-head .title-container::after {
-      background-color: rgba(198, 131, 58, 0.3); }
+      background-color: #c390ef9e; }
     .work-item.three .card-head .title-container h3 {
-      color: rgba(198, 131, 58, 0.6); }
+      color: #c390ef9e; }
     .work-item.three .card-head .title-container h3::after,
     .work-item.three .card-head .title-container h3::before {
-      content: 'Skyn&Boone'; }
+      content: 'SOME.WORDS'; }
     .work-item.three .card-head .title-container h3::before {
-      color: rgba(198, 131, 58, 0.3); }
+      color: rgba(195, 144, 239, 0.3); }
     .work-item.three .card-head .title-container h3::after {
-      color: #c6833a; }
+      color: #c390ef; }
     .work-item.three .card-head .content-container {
       width: 12.6rem;
       padding: 10px 0 0 10px;
@@ -430,51 +429,74 @@ footer {
       height: 75px;
       border-left: 1px solid #375b80;
       float: left; }
+  .work-item.four {
+    padding: 3.2rem 0 0 0;
+    height: 40rem; }
+    .work-item.four .work-image {
+      background-image: url("../images/skynimage.jpg"); }
+    .work-item.four .card-head .title-container::after {
+      background-color: rgba(198, 131, 58, 0.3); }
+    .work-item.four .card-head .title-container h3 {
+      color: rgba(198, 131, 58, 0.6); }
+    .work-item.four .card-head .title-container h3::after,
+    .work-item.four .card-head .title-container h3::before {
+      content: 'Skyn&Boone'; }
+    .work-item.four .card-head .title-container h3::before {
+      color: rgba(198, 131, 58, 0.3); }
+    .work-item.four .card-head .title-container h3::after {
+      color: #c6833a; }
+    .work-item.four .card-head .content-container {
+      width: 12.6rem;
+      padding: 10px 0 0 10px;
+      margin-top: 15px;
+      height: 75px;
+      border-left: 1px solid #375b80;
+      float: left; }
 
-main#woodlog .top-nav-container, main#isspass .top-nav-container, main#skynboone .top-nav-container {
+main#woodlog .top-nav-container, main#isspass .top-nav-container, main#skynboone .top-nav-container, main#somewords .top-nav-container {
   width: 100%;
   margin: 0;
   padding: 0 17%;
   opacity: 1;
   z-index: 1;
   position: inherit; }
-  main#woodlog .top-nav-container .top-nav, main#isspass .top-nav-container .top-nav, main#skynboone .top-nav-container .top-nav {
+  main#woodlog .top-nav-container .top-nav, main#isspass .top-nav-container .top-nav, main#skynboone .top-nav-container .top-nav, main#somewords .top-nav-container .top-nav {
     color: #ffff;
     padding-bottom: 3rem;
     background-color: inherit; }
-    main#woodlog .top-nav-container .top-nav a, main#isspass .top-nav-container .top-nav a, main#skynboone .top-nav-container .top-nav a {
+    main#woodlog .top-nav-container .top-nav a, main#isspass .top-nav-container .top-nav a, main#skynboone .top-nav-container .top-nav a, main#somewords .top-nav-container .top-nav a {
       color: inherit;
       transition: all 0.5s ease-out;
       -webkit-transition: all 0.5s ease-out; }
 
-main#woodlog .work-head-container, main#isspass .work-head-container, main#skynboone .work-head-container {
+main#woodlog .work-head-container, main#isspass .work-head-container, main#skynboone .work-head-container, main#somewords .work-head-container {
   width: 100%;
   padding-top: 4rem; }
-  main#woodlog .work-head-container .laptop-image, main#isspass .work-head-container .laptop-image, main#skynboone .work-head-container .laptop-image {
+  main#woodlog .work-head-container .laptop-image, main#isspass .work-head-container .laptop-image, main#skynboone .work-head-container .laptop-image, main#somewords .work-head-container .laptop-image {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center bottom;
     width: 100%;
     height: calc(100vh - 3rem); }
 
-main#woodlog .text-container, main#isspass .text-container, main#skynboone .text-container {
+main#woodlog .text-container, main#isspass .text-container, main#skynboone .text-container, main#somewords .text-container {
   max-width: 60rem; }
 
-main#woodlog .app-content, main#isspass .app-content, main#skynboone .app-content {
+main#woodlog .app-content, main#isspass .app-content, main#skynboone .app-content, main#somewords .app-content {
   height: 42rem;
   width: 100%; }
-  main#woodlog .app-content .info-card, main#isspass .app-content .info-card, main#skynboone .app-content .info-card {
+  main#woodlog .app-content .info-card, main#isspass .app-content .info-card, main#skynboone .app-content .info-card, main#somewords .app-content .info-card {
     background: #ffff;
     box-shadow: 3px 6px 16px 2px #888888; }
-  main#woodlog .app-content h2, main#isspass .app-content h2, main#skynboone .app-content h2 {
+  main#woodlog .app-content h2, main#isspass .app-content h2, main#skynboone .app-content h2, main#somewords .app-content h2 {
     font-family: 'Rubik'; }
-  main#woodlog .app-content .head-image-container, main#isspass .app-content .head-image-container, main#skynboone .app-content .head-image-container {
+  main#woodlog .app-content .head-image-container, main#isspass .app-content .head-image-container, main#skynboone .app-content .head-image-container, main#somewords .app-content .head-image-container {
     width: 100%;
     display: flex;
     align-items: center; }
-  main#woodlog .app-content.one, main#isspass .app-content.one, main#skynboone .app-content.one {
+  main#woodlog .app-content.one, main#isspass .app-content.one, main#skynboone .app-content.one, main#somewords .app-content.one {
     padding-top: 11rem; }
-    main#woodlog .app-content.one p, main#isspass .app-content.one p, main#skynboone .app-content.one p {
+    main#woodlog .app-content.one p, main#isspass .app-content.one p, main#skynboone .app-content.one p, main#somewords .app-content.one p {
       display: block;
       margin: auto;
       width: 50%;
@@ -483,12 +505,12 @@ main#woodlog .app-content, main#isspass .app-content, main#skynboone .app-conten
       line-height: 50px;
       color: #4c4c4c;
       max-width: 65rem; }
-  main#woodlog .app-content.two .head-image-container, main#isspass .app-content.two .head-image-container, main#skynboone .app-content.two .head-image-container {
+  main#woodlog .app-content.two .head-image-container, main#isspass .app-content.two .head-image-container, main#skynboone .app-content.two .head-image-container, main#somewords .app-content.two .head-image-container {
     height: 27rem;
     justify-content: space-between; }
-    main#woodlog .app-content.two .head-image-container img, main#isspass .app-content.two .head-image-container img, main#skynboone .app-content.two .head-image-container img {
+    main#woodlog .app-content.two .head-image-container img, main#isspass .app-content.two .head-image-container img, main#skynboone .app-content.two .head-image-container img, main#somewords .app-content.two .head-image-container img {
       width: 45%; }
-  main#woodlog .app-content.two .text-container, main#isspass .app-content.two .text-container, main#skynboone .app-content.two .text-container {
+  main#woodlog .app-content.two .text-container, main#isspass .app-content.two .text-container, main#skynboone .app-content.two .text-container, main#somewords .app-content.two .text-container {
     display: block;
     margin: auto;
     width: 50%;
@@ -496,19 +518,19 @@ main#woodlog .app-content, main#isspass .app-content, main#skynboone .app-conten
     color: #4c4c4c;
     margin-top: 6rem;
     margin-bottom: 2rem; }
-    main#woodlog .app-content.two .text-container h2, main#isspass .app-content.two .text-container h2, main#skynboone .app-content.two .text-container h2 {
+    main#woodlog .app-content.two .text-container h2, main#isspass .app-content.two .text-container h2, main#skynboone .app-content.two .text-container h2, main#somewords .app-content.two .text-container h2 {
       font-size: 1.7rem; }
-    main#woodlog .app-content.two .text-container p, main#isspass .app-content.two .text-container p, main#skynboone .app-content.two .text-container p {
+    main#woodlog .app-content.two .text-container p, main#isspass .app-content.two .text-container p, main#skynboone .app-content.two .text-container p, main#somewords .app-content.two .text-container p {
       font-family: 'Montserrat', sans-serif; }
-  main#woodlog .app-content.three, main#isspass .app-content.three, main#skynboone .app-content.three {
+  main#woodlog .app-content.three, main#isspass .app-content.three, main#skynboone .app-content.three, main#somewords .app-content.three {
     height: 56rem;
     margin: 10rem 0 5rem 0; }
-    main#woodlog .app-content.three .head-image-container, main#isspass .app-content.three .head-image-container, main#skynboone .app-content.three .head-image-container {
+    main#woodlog .app-content.three .head-image-container, main#isspass .app-content.three .head-image-container, main#skynboone .app-content.three .head-image-container, main#somewords .app-content.three .head-image-container {
       height: 25rem; }
-      main#woodlog .app-content.three .head-image-container video, main#isspass .app-content.three .head-image-container video, main#skynboone .app-content.three .head-image-container video {
+      main#woodlog .app-content.three .head-image-container video, main#isspass .app-content.three .head-image-container video, main#skynboone .app-content.three .head-image-container video, main#somewords .app-content.three .head-image-container video {
         display: block;
         margin: auto; }
-    main#woodlog .app-content.three .text-container, main#isspass .app-content.three .text-container, main#skynboone .app-content.three .text-container {
+    main#woodlog .app-content.three .text-container, main#isspass .app-content.three .text-container, main#skynboone .app-content.three .text-container, main#somewords .app-content.three .text-container {
       display: block;
       margin: auto;
       width: 50%;
@@ -516,19 +538,19 @@ main#woodlog .app-content, main#isspass .app-content, main#skynboone .app-conten
       color: #4c4c4c;
       margin-top: 4rem;
       margin-bottom: 2rem; }
-      main#woodlog .app-content.three .text-container h2, main#isspass .app-content.three .text-container h2, main#skynboone .app-content.three .text-container h2 {
+      main#woodlog .app-content.three .text-container h2, main#isspass .app-content.three .text-container h2, main#skynboone .app-content.three .text-container h2, main#somewords .app-content.three .text-container h2 {
         font-size: 1.7rem; }
-      main#woodlog .app-content.three .text-container p, main#isspass .app-content.three .text-container p, main#skynboone .app-content.three .text-container p {
+      main#woodlog .app-content.three .text-container p, main#isspass .app-content.three .text-container p, main#skynboone .app-content.three .text-container p, main#somewords .app-content.three .text-container p {
         font-family: 'Montserrat', sans-serif; }
-      main#woodlog .app-content.three .text-container ul, main#isspass .app-content.three .text-container ul, main#skynboone .app-content.three .text-container ul {
+      main#woodlog .app-content.three .text-container ul, main#isspass .app-content.three .text-container ul, main#skynboone .app-content.three .text-container ul, main#somewords .app-content.three .text-container ul {
         width: 50%;
         float: left;
         font-size: 0.9rem; }
-  main#woodlog .app-content.four, main#isspass .app-content.four, main#skynboone .app-content.four {
+  main#woodlog .app-content.four, main#isspass .app-content.four, main#skynboone .app-content.four, main#somewords .app-content.four {
     width: 100%;
     background-color: #dce0e3;
     height: auto; }
-    main#woodlog .app-content.four video, main#isspass .app-content.four video, main#skynboone .app-content.four video {
+    main#woodlog .app-content.four video, main#isspass .app-content.four video, main#skynboone .app-content.four video, main#somewords .app-content.four video {
       width: 75%;
       display: block;
       margin: auto; }
@@ -641,6 +663,54 @@ main#isspass .app-content.three {
     margin: 0 auto 6rem auto;
     display: flex;
     justify-content: space-around; }
+
+main#somewords .work-highlight {
+  color: #d52fff; }
+
+main#somewords .top-nav-container {
+  background-color: #ffffff; }
+  main#somewords .top-nav-container .top-nav {
+    color: #00000073; }
+  main#somewords .top-nav-container a:hover {
+    color: #259287;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out; }
+
+main#somewords .work-head-container {
+  background-color: #ffffff; }
+  main#somewords .work-head-container .laptop-image {
+    background-image: url("../images/somewordslaptop.jpg"); }
+
+main#somewords .head-image-container {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center; }
+
+main#somewords .app-content.one {
+  height: 41rem; }
+
+main#somewords .app-content.two {
+  height: 26rem; }
+  main#somewords .app-content.two .text-container p {
+    margin-bottom: 3rem; }
+  main#somewords .app-content.two li {
+    margin-bottom: 1rem; }
+
+main#somewords .app-content.three {
+  margin: 0rem 0 7rem 0; }
+  main#somewords .app-content.three img {
+    margin: 0 auto 6rem auto;
+    display: block;
+    box-shadow: 3px 6px 16px 2px #888888; }
+
+main#somewords .app-content.four {
+  margin-top: -4rem;
+  background: none; }
+  main#somewords .app-content.four img {
+    margin: 0 auto 6rem auto;
+    display: block;
+    box-shadow: 3px 6px 16px 2px #888888; }
 
 main#about .top-nav-container {
   opacity: 1;
@@ -760,7 +830,7 @@ button:focus {
     width: 20px; }
   main#home .line {
     height: 900px; }
-  main#isspass .app-content.two .head-image-container, main#woodlog .app-content.two .head-image-container, main#skynboone .app-content.two .head-image-container {
+  main#isspass .app-content.two .head-image-container, main#woodlog .app-content.two .head-image-container, main#skynboone .app-content.two .head-image-container, main#somewords .app-content.two .head-image-container {
     height: auto; } }
 
 @media screen and (max-width: 768px) {
@@ -790,21 +860,21 @@ button:focus {
         padding: 1rem 0 0 2rem; }
       main#home .work-item.two {
         padding: 1rem 1rem 0 0; }
-    main#woodlog .top-nav-container, main#isspass .top-nav-container, main#skynboone .top-nav-container {
+    main#woodlog .top-nav-container, main#isspass .top-nav-container, main#skynboone .top-nav-container, main#somewords .top-nav-container {
       display: none; }
-    main#woodlog .app-content.one, main#isspass .app-content.one, main#skynboone .app-content.one {
+    main#woodlog .app-content.one, main#isspass .app-content.one, main#skynboone .app-content.one, main#somewords .app-content.one {
       padding-top: 7rem; }
-      main#woodlog .app-content.one p, main#isspass .app-content.one p, main#skynboone .app-content.one p {
+      main#woodlog .app-content.one p, main#isspass .app-content.one p, main#skynboone .app-content.one p, main#somewords .app-content.one p {
         width: 80%; }
-    main#woodlog .app-content.two .head-image-container, main#isspass .app-content.two .head-image-container, main#skynboone .app-content.two .head-image-container {
+    main#woodlog .app-content.two .head-image-container, main#isspass .app-content.two .head-image-container, main#skynboone .app-content.two .head-image-container, main#somewords .app-content.two .head-image-container {
       height: 20rem; }
-      main#woodlog .app-content.two .head-image-container img, main#isspass .app-content.two .head-image-container img, main#skynboone .app-content.two .head-image-container img {
+      main#woodlog .app-content.two .head-image-container img, main#isspass .app-content.two .head-image-container img, main#skynboone .app-content.two .head-image-container img, main#somewords .app-content.two .head-image-container img {
         width: 48%; }
-    main#woodlog .app-content.two .text-container, main#isspass .app-content.two .text-container, main#skynboone .app-content.two .text-container {
+    main#woodlog .app-content.two .text-container, main#isspass .app-content.two .text-container, main#skynboone .app-content.two .text-container, main#somewords .app-content.two .text-container {
       width: 70%; }
-    main#woodlog .app-content.three .head-image-container video, main#isspass .app-content.three .head-image-container video, main#skynboone .app-content.three .head-image-container video {
+    main#woodlog .app-content.three .head-image-container video, main#isspass .app-content.three .head-image-container video, main#skynboone .app-content.three .head-image-container video, main#somewords .app-content.three .head-image-container video {
       width: 100%; }
-    main#woodlog .app-content.three .text-container, main#isspass .app-content.three .text-container, main#skynboone .app-content.three .text-container {
+    main#woodlog .app-content.three .text-container, main#isspass .app-content.three .text-container, main#skynboone .app-content.three .text-container, main#somewords .app-content.three .text-container {
       width: 70%; }
     main#isspass .app-content.two {
       height: auto; }
@@ -862,58 +932,59 @@ button:focus {
     padding: 0;
     flex-wrap: wrap;
     height: 40rem; }
-    main#home .work-item.one, main#home .work-item.two, main#home .work-item.three {
+    main#home .work-item.one, main#home .work-item.two, main#home .work-item.three, main#home .work-item.four {
       padding: 0rem;
       border: none; }
-      main#home .work-item.one .work-card, main#home .work-item.two .work-card, main#home .work-item.three .work-card {
+      main#home .work-item.one .work-card, main#home .work-item.two .work-card, main#home .work-item.three .work-card, main#home .work-item.four .work-card {
         width: 100%;
         height: 44%;
         padding: 0; }
-        main#home .work-item.one .work-card .card-head .title-container, main#home .work-item.two .work-card .card-head .title-container, main#home .work-item.three .work-card .card-head .title-container {
+        main#home .work-item.one .work-card .card-head .title-container, main#home .work-item.two .work-card .card-head .title-container, main#home .work-item.three .work-card .card-head .title-container, main#home .work-item.four .work-card .card-head .title-container {
           padding-left: 5px;
           width: 150px; }
-        main#home .work-item.one .work-card .card-head .content-container, main#home .work-item.two .work-card .card-head .content-container, main#home .work-item.three .work-card .card-head .content-container {
+        main#home .work-item.one .work-card .card-head .content-container, main#home .work-item.two .work-card .card-head .content-container, main#home .work-item.three .work-card .card-head .content-container, main#home .work-item.four .work-card .card-head .content-container {
           width: 53%; }
-        main#home .work-item.one .work-card .btn, main#home .work-item.one .work-card .btn-dark, main#home .work-item.one .work-card .btn-light, main#home .work-item.two .work-card .btn, main#home .work-item.two .work-card .btn-dark, main#home .work-item.two .work-card .btn-light, main#home .work-item.three .work-card .btn, main#home .work-item.three .work-card .btn-dark, main#home .work-item.three .work-card .btn-light {
+        main#home .work-item.one .work-card .btn, main#home .work-item.one .work-card .btn-dark, main#home .work-item.one .work-card .btn-light, main#home .work-item.two .work-card .btn, main#home .work-item.two .work-card .btn-dark, main#home .work-item.two .work-card .btn-light, main#home .work-item.three .work-card .btn, main#home .work-item.three .work-card .btn-dark, main#home .work-item.three .work-card .btn-light, main#home .work-item.four .work-card .btn, main#home .work-item.four .work-card .btn-dark, main#home .work-item.four .work-card .btn-light {
           margin: 6rem auto;
           display: block; }
-        main#home .work-item.one .work-card .btn, main#home .work-item.one .work-card .btn-dark, main#home .work-item.one .work-card .btn-light, main#home .work-item.two .work-card .btn, main#home .work-item.two .work-card .btn-dark, main#home .work-item.two .work-card .btn-light, main#home .work-item.three .work-card .btn, main#home .work-item.three .work-card .btn-dark, main#home .work-item.three .work-card .btn-light {
+        main#home .work-item.one .work-card .btn, main#home .work-item.one .work-card .btn-dark, main#home .work-item.one .work-card .btn-light, main#home .work-item.two .work-card .btn, main#home .work-item.two .work-card .btn-dark, main#home .work-item.two .work-card .btn-light, main#home .work-item.three .work-card .btn, main#home .work-item.three .work-card .btn-dark, main#home .work-item.three .work-card .btn-light, main#home .work-item.four .work-card .btn, main#home .work-item.four .work-card .btn-dark, main#home .work-item.four .work-card .btn-light {
           width: 30%;
           margin-top: 2rem; }
-      main#home .work-item.one .work-image, main#home .work-item.two .work-image, main#home .work-item.three .work-image {
+      main#home .work-item.one .work-image, main#home .work-item.two .work-image, main#home .work-item.three .work-image, main#home .work-item.four .work-image {
         width: 100%;
         height: 56%; }
     main#home .work-item.two .work-card {
       order: 0; }
     main#home .work-item.two .work-image {
       order: 1; }
-  main#isspass .work-head-container, main#woodlog .work-head-container, main#skynboone .work-head-container {
+  main#isspass .work-head-container, main#woodlog .work-head-container, main#skynboone .work-head-container, main#somewords .work-head-container {
     padding-top: 1rem; }
-    main#isspass .work-head-container .laptop-image, main#woodlog .work-head-container .laptop-image, main#skynboone .work-head-container .laptop-image {
+    main#isspass .work-head-container .laptop-image, main#woodlog .work-head-container .laptop-image, main#skynboone .work-head-container .laptop-image, main#somewords .work-head-container .laptop-image {
       max-height: 19rem; }
-  main#isspass .app-content ul, main#woodlog .app-content ul, main#skynboone .app-content ul {
+  main#isspass .app-content ul, main#woodlog .app-content ul, main#skynboone .app-content ul, main#somewords .app-content ul {
     height: auto; }
-  main#isspass .app-content.one, main#woodlog .app-content.one, main#skynboone .app-content.one {
+  main#isspass .app-content.one, main#woodlog .app-content.one, main#skynboone .app-content.one, main#somewords .app-content.one {
     height: auto; }
-  main#isspass .app-content.two, main#woodlog .app-content.two, main#skynboone .app-content.two {
+  main#isspass .app-content.two, main#woodlog .app-content.two, main#skynboone .app-content.two, main#somewords .app-content.two {
     height: auto; }
-  main#isspass .app-content.three, main#woodlog .app-content.three, main#skynboone .app-content.three {
+  main#isspass .app-content.three, main#woodlog .app-content.three, main#skynboone .app-content.three, main#somewords .app-content.three {
     height: auto;
     margin-bottom: 10rem; }
-    main#isspass .app-content.three .head-image-container.two, main#woodlog .app-content.three .head-image-container.two, main#skynboone .app-content.three .head-image-container.two {
+    main#isspass .app-content.three .head-image-container.two, main#woodlog .app-content.three .head-image-container.two, main#skynboone .app-content.three .head-image-container.two, main#somewords .app-content.three .head-image-container.two {
       padding: 0;
       height: auto; }
       main#isspass .app-content.three .head-image-container.two.two img,
       main#isspass .app-content.three .head-image-container.two.two video, main#woodlog .app-content.three .head-image-container.two.two img,
       main#woodlog .app-content.three .head-image-container.two.two video, main#skynboone .app-content.three .head-image-container.two.two img,
-      main#skynboone .app-content.three .head-image-container.two.two video {
+      main#skynboone .app-content.three .head-image-container.two.two video, main#somewords .app-content.three .head-image-container.two.two img,
+      main#somewords .app-content.three .head-image-container.two.two video {
         max-width: 100%; }
-    main#isspass .app-content.three .info-card, main#woodlog .app-content.three .info-card, main#skynboone .app-content.three .info-card {
+    main#isspass .app-content.three .info-card, main#woodlog .app-content.three .info-card, main#skynboone .app-content.three .info-card, main#somewords .app-content.three .info-card {
       width: 100%;
       height: auto; }
-      main#isspass .app-content.three .info-card img, main#woodlog .app-content.three .info-card img, main#skynboone .app-content.three .info-card img {
+      main#isspass .app-content.three .info-card img, main#woodlog .app-content.three .info-card img, main#skynboone .app-content.three .info-card img, main#somewords .app-content.three .info-card img {
         width: 50%; }
-    main#isspass .app-content.three .text-container ul, main#woodlog .app-content.three .text-container ul, main#skynboone .app-content.three .text-container ul {
+    main#isspass .app-content.three .text-container ul, main#woodlog .app-content.three .text-container ul, main#skynboone .app-content.three .text-container ul, main#somewords .app-content.three .text-container ul {
       width: 100%; }
   main#skynboone .app-content.three {
     height: auto; }
@@ -929,6 +1000,8 @@ button:focus {
   main#isspass .app-content.three {
     margin-bottom: 30rem; }
   main#isspass .app-content.four video {
+    width: 100%; }
+  main#somewords .app-content img {
     width: 100%; }
   main#about .text-container {
     width: 100%;
